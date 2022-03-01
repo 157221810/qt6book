@@ -92,7 +92,7 @@ You can define on which state change a particular transition can be applied usin
 
 For example, `from: "*"; to: "*"` means "from any state to any other state", and is the default value for `from` and `to`. This means the transition will be applied to every state switch.
 
-For this example, we would like to animate the color changes when switching state from “go” to “stop”. For the other reversed state change (“stop” to “go”) we want to keep an immediate color change and don’t apply a transition. 
+For this example, we would like to animate the color changes when switching state from “stop” to “go”. For the other reversed state change (“go” to “stop”) we want to keep an immediate color change and don’t apply a transition. 
 
 We restrict the transition with the `from` and `to` properties to filter only the state change from “go” to “stop”. Inside the transition, we add two color animations for each light, which shall animate the property changes defined in the state description.
 
